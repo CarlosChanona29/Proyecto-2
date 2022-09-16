@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/file_type_http_icon_130539.png" alt="" class="iniciohtml">
+        <nav class="menu-navegacion">
+            <a href="#¿Qué es HTTP?">¿Qué es HTTP?</a>
+            <a href="#Historia de HTTP">Historia de HTTP</a>
+            <a href="#funcion">¿Cómo funciona HTTP?</a>
+            <a href="#Diferencia entre HTTP y HTTPS">Diferencia entre HTTP y HTTPS</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">HTTP</h1>
+            <p class="copy">CARLOS ALBERTO LEÓN CHANONA.</p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor-http" id="¿Qué es HTTP?">
+            <h2 class="titulo"> ¿Qué es HTTP?</h2>
+            <div class="contenedor-queeshttp">
+                <img src="img/httpinicio.jpg" alt="">
+                <div class="definicion">
+                        <div class="definicion1">
+                            <h3 class="contexto">Lo que conocemos</h3>
+                            <p class="contenidodefi">El Protocolo de transferencia de hipertexto 
+                             (en inglés, Hypertext Transfer Protocol, abreviado HTTP)
+                             proporciona un estándar de protocolo de red que los 
+                             navegadores web y los servidores usan para comunicarse. 
+                             Puedes ver HTTP todos los días porque cuando visitas un 
+                             sitio web, el protocolo está escrito directamente en la URL.
+                             Este protocolo es similar a otros, como el protocolo de 
+                             transferencia de archivos (FTP), ya que lo utiliza un 
+                             programa cliente para solicitar archivos de un servidor 
+                             remoto. En el caso de HTTP, generalmente es un navegador 
+                             web que solicita archivos HTML de un servidor web, que luego 
+                             se muestran en el navegador con texto, imágenes, hipervínculos 
+                             y activos relacionados.
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <br>
+        </section>
+        <section class="historia" id="Historia de HTTP">
+            <div class="contenedor">
+                <h2 class="titulo">Historia de HTTP</h2>
+                <div class="contenedor-historia">
+                    <img src="img/Location_HTTP_24404.png" alt="">
+                    <h3>
+                        Tim Berners-Lee creó el estándar HTTP inicial a principios 
+                        de la década de 1990 como parte de su trabajo en la definición 
+                        de la World Wide Web original. Tres versiones principales se 
+                        implementaron ampliamente durante la década de 1990:
+                    </h3>
+                    <br>
+                    <li>HTTP 0.9 : soporte de documentos básicos de hipertexto</li>
+                    <li>HTTP 1.0 : Extensiones para soportar sitios web ricos</li>
+                    <li>HTTP 1.1 : desarrollado para abordar las limitaciones de rendimiento 
+                        de HTTP 1.0, especificado en Internet RFC 2068</li>
+                    <br>
+                    <h3>La última versión, HTTP 2.0, se convirtió en un estándar aprobado en 
+                        2015. Mantiene la compatibilidad con HTTP 1.1 pero ofrece mejoras de 
+                        rendimiento adicionales.</h3>
+                    <br>
+                    <h3>Si bien el estándar HTTP no cifra el tráfico enviado a través de una red, 
+                        el estándar HTTPS agrega cifrado a HTTP mediante el uso de Secure Sockets 
+                        Layer o, más tarde, Transport Layer Security.</h3>
+                </div>
+            </div>
+        </section>
+        <section class="funcion" id="funcion">
+            <h2 class="titulo">¿Cómo funciona HTTP?</h2>
+            <div class="contenedor-funcion">
+                <img src="img/Cómo-funciona-HTTP.png" alt="">
+                <div class="funciondesc">
+                    <h3>
+                        HTTP es un protocolo de capa de aplicación creado sobre TCP que utiliza un modelo 
+                        de comunicación cliente-servidor. Los clientes y servidores HTTP se comunican a 
+                        través de mensajes de solicitud y respuesta. Los tres tipos principales de mensajes 
+                        HTTP son GET, POST y HEAD.
+                    </h3>
+                    <br>
+                  <div class="lista-funcion">
+                    <li>HTTP GET: los mensajes enviados a un servidor contienen solo una URL. Se pueden agregar 
+                        cero o más parámetros de datos opcionales al final de la URL. El servidor procesa la porción 
+                        de datos opcional de la URL, si está presente, y devuelve el resultado (una página web o 
+                        elemento de una página web) al navegador.
+                        </li>
+                       <li>
+                        POST HTTP: los mensajes colocan los parámetros de datos opcionales en el cuerpo del mensaje 
+                        de solicitud en lugar de agregarlos al final de la URL.
+                       </li>
+                       <li>
+                        HTTP HEAD: las solicitudes funcionan igual que las solicitudes GET. En lugar de responder 
+                        con el contenido completo de la URL, el servidor devuelve solo la información del encabezado 
+                        (contenida dentro de la sección HTML).
+                       </li>
+                  </div>
+                   <br>
+                   <h3>
+                    El navegador inicia la comunicación con un servidor HTTP iniciando una conexión TCP al servidor. 
+                    Las sesiones de navegación web usan el puerto 80 del servidor de manera predeterminada, aunque 
+                    en ocasiones se usan otros puertos como el 8080.
+                   </h3>
+                   <br>
+                   <h3>
+                    Después de establecer una sesión, puedes activar el envío y la recepción de mensajes HTTP visitando 
+                    la página web.
+                   </h3>
+                   <br>
+                   <h3>
+                    HTTP es lo que se llama un sistema sin estado. Lo que esto significa es que, a diferencia de otros 
+                    protocolos de transferencia de archivos como FTP, la conexión
+                   </h3>
+                   <h3>
+                    HTTP se interrumpe una vez que se ha completado la solicitud. Entonces, después de que su navegador 
+                    web envía la solicitud y el servidor responde con la página, la conexión se cierra.
+                   </h3>
+                </div>
+            </div>
+            <br>
+        </section>
+        <section class="diferencias" id="Diferencia entre HTTP y HTTPS">
+            <h2 class="titulo">Diferencias entre HTTP y HTTPS</h2>
+            <div class="contenedor-diferencias">
+                <div class="imgdif2">
+                    <img src="img/lock_106683.png" alt="">
+                </div>
+                <div class="difconte">
+                    <h3>HTTPS (HTTP over SSL o HTTP Secure) es el uso de Secure Sockets Layer (SSL) o 
+                        Transport Layer Security (TLS) como subcapa bajo la estratificación regular de
+                         aplicaciones HTTP. HTTPS cifra y descifra las solicitudes de páginas HTTP de 
+                         los usuarios, así como las páginas devueltas por el servidor Web. El uso de HTTPS 
+                         protege contra las interceptaciones y los ataques «man-in-the-middle» (MitM). HTTPS 
+                         fue desarrollado por Netscape.
+                    </h3>
+                </div>
+                <br>
+                <div class="listdif">
+                    <h3>A continuación se enlistaran las diferencias más notables</h3>
+                <br>
+                <li>HTTPS tiene una S en la URL.</li>
+                <li>HTTPS es más seguro que HTTP.</li>
+                <li>HTTPS requiere un certificado, generalmente SSL.</li>
+                <li>HTTPS usa encriptación y HTTP no.</li>
+                <li>HTTPS usa el número de puerto 443 mientras que HTTP usa 80.</li>
+                <li>HTTPS te protegerá de los ataques man-in-the-middle.</li>
+                </div>
+            </div>
+            <br>
+        </section>
+    </main>
+    <div class="partfinal">
+        <H3>UNIVERSIDAD AUTONOMA DE CHIAPAS</H3>
+        <H2>A200220</H2>
+    </div>
+    <script src="js/menu.js"></script>
+</body>
+</html>
